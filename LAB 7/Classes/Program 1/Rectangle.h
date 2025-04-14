@@ -1,0 +1,25 @@
+#ifndef RECTANGLE_H
+#define RECTANGLE_H
+
+class Rectangle {
+private:
+    float length;
+    float width;
+
+public:
+    Rectangle();  // Default constructor
+    ~Rectangle(); // Destructor (does nothing)
+
+    // Accessor methods (setters)
+    void setLength(float l);
+    void setWidth(float w);
+
+    // Accessor methods (getters)
+    float getLength() const;
+    float getWidth() const;
+
+    // Calculate area
+    float calculateArea() const;
+};
+
+#endif
